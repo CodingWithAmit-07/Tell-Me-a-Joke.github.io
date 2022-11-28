@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/Tell_me_joke.css" />
+    <title>Tell Me A Joke (16+)</title>
+    <style>
+    body{
+        background-color: rgb(219, 192, 160);
+    }
+      #res {
+        align-content: center;
+        border-radius: 4px;
+        font-size: 40px;
+        padding: 15px;
+        margin: auto;
+        background-color: aqua;
+        width: 500px;
+        text-align: center;
+        position: relative;
+        bottom: -300px;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+        
+      }
+      #test {
+       position: relative;
+       top: 280px;
+       display: flex;
+       margin: auto;
+       text-align: center;
+       font-size: 50px;
+       font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+       background-color: rgb(255, 255, 5);
+      }
+    </style>
+  </head>
+  <body>
+    <button id="test" onclick="jokefunc()">Tell Me A Joke (16+)</button>
+    <p id="res">Joke Here</p>
+
+    <script>
+      function jokefunc() {
+        jokess = [
+          `How do all the oceans say hello to each other? They wave!`,
+
+          `What did one wall say to the other wall? Ill meet you at the corner!`,
+
+          `What do you call a bear with no teeth? A gummy bear!`,
+
+          `What do you call cheese that isnt yours? Nacho cheese!`,
+
+          `Where do cows go for entertainment? To the moo-vies!`,
+
+          `Knock, knock. Whos there? Cows go. Cows go who? No, cows go MOO!`,
+
+          `What do you call a cow with no legs? Ground beef!`,
+
+          `What do you call a cow with two legs? Lean meat!`,
+
+          `What do you call a pig that knows karate? A pork chop!`,
+
+          `Why are ghosts bad liars? Because you can see right through them!`,
+
+          `What animal needs to wear a wig? A bald eagle!`,
+
+          `What do you call a fly without wings? A walk!`,
+
+          `Knock knock. Whos there? A little old lady? A little old lady who? I didnt know you could yodel!`,
+
+          `Why do bees have sticky hair? Because they use honey combs!`,
+
+          `What do you call an alligator in a vest? An investigator!`,
+
+          `Why cant you give Elsa a balloon? Because she will let it go!`,
+
+          `What do you get when you cross a snowman with a vampire Frostbite!`,
+
+          `What has four wheels and flies? A garbage truck!`,
+
+          `Why did the man run around his bed? Because he was trying to catch up on his sleep!`,
+
+          `Why did the math book look so sad? Because it had so many problems!`,
+
+          `Can a kangaroo jump higher than the Empire State Building? Of course!  The Empire State Building cant jump!`,
+
+          `If April showers bring Mayflowers, what do Mayflowers bring?Pilgrims!`,
+
+          `What do you call a sleeping bull? A bulldozer!`,
+
+          `What did the zero say to the eight? Nice belt!`,
+
+          `Why do sharks swim in saltwater? Because pepper water makes them sneeze!`,
+
+          `Where do you find a dog with no legs? Right where you left him!`,
+
+          `Where do fish keep their money? In the river bank!`,
+
+          `Why did the gum cross the road? It was stuck to the chickens foot!`,
+
+          `What is brown and sticky? A stick!`,
+
+          `Why did the picture go to jail? It was framed!`,
+
+          `How do you know if theres an elephant under your bed? Your head hits the ceiling!`,
+
+          `Why are elephants so wrinkled? Because they take too long to iron!`,
+
+          `How do you keep an elephant from charging? Take away her credit card!`,
+
+          `Why did the elephant paint himself different colors? So he could hide in the crayon box!`,
+
+          `How can you tell if an elephant has been in your refrigerator?By the footprints in the butter!`,
+
+          `What is the difference between elephants and grapes? Grapes are purple.`,
+
+          `What did Tarzan say when he saw the elephants coming? “Here come the elephants!”`,
+
+          `What did Jane say when she saw the elephants coming? “Here come the grapes!” (She was colorblind.)`,
+
+          `Why did the chicken cross the playground? To get to the other slide!`,
+        ];
+        const random = Math.floor(Math.random() * jokess.length);
+        document.getElementById("res").innerHTML = jokess[random];
+      }
+    
+      
+    </script>
+  </body>
+</html>
