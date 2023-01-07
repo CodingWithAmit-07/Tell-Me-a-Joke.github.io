@@ -11,13 +11,16 @@
         background-color: rgb(219, 192, 160);
     }
       #res {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         align-content: center;
         border-radius: 5px;
         font-size: 40px;
         padding: 15px;
         margin: auto;
         background-color: aqua;
-        width: 500px;
+        width: 80%;
         text-align: center;
         position: relative;
         bottom: -300px;
@@ -33,21 +36,36 @@
        position: relative;
        top: 280px;
        display: flex;
+       justify-content: center;
+       align-items: center;
        margin: auto;
        text-align: center;
        font-size: 50px;
        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
        background-color: rgb(255, 255, 5);
        border-radius: 10px;
+       width: 40%;
     
       }
       #test:hover{
         background-color: rgb(255, 153, 0);
       }
+
+      @media screen and (max-width:549px) {
+        #test {
+          font-size: 35px;
+          width: 90%;
+        }
+
+        #res {
+          font-size: larger;
+          width: 90%;
+        }
+      }
     </style>
   </head>
   <body>
-    <button id="test" onclick="jokefunc()">Tell Me A Joke (16+)</button>
+    <button id="test" onclick="jokefunc()">Tell Me A Jokes</button>
     <p id="res">Joke Here</p>
 
     <script>
